@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://25850kpjo1jw"]
+
+[ext_resource type="Script" path="res://scripts/warper.gd" id="1_02y1k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nyeop"]
+size = Vector2(106, 246)
+
+[node name="warper" type="Area2D" groups=["warper"]]
+script = ExtResource("1_02y1k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(43, 113)
+shape = SubResource("RectangleShape2D_nyeop")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

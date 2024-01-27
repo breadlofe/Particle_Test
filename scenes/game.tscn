@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=3 uid="uid://bls25ie3jfecj"]
+
+[ext_resource type="PackedScene" uid="uid://bsv5y8xp5vwgf" path="res://scenes/floor.tscn" id="1_fdeyk"]
+[ext_resource type="PackedScene" uid="uid://bi86werbca44n" path="res://scenes/character.tscn" id="2_ykthu"]
+[ext_resource type="PackedScene" uid="uid://dpcw5tmshgw6u" path="res://scenes/invis_wall.tscn" id="3_ylq68"]
+[ext_resource type="PackedScene" uid="uid://cnah5onxxyp1m" path="res://scenes/slope.tscn" id="4_62r2u"]
+[ext_resource type="PackedScene" uid="uid://v1v1w8cmthfg" path="res://scenes/cloud.tscn" id="5_toisc"]
+[ext_resource type="PackedScene" uid="uid://25850kpjo1jw" path="res://scenes/warper.tscn" id="6_42vlc"]
+[ext_resource type="Texture2D" uid="uid://cpr74v6xg80kf" path="res://textures/signRight.png" id="6_vlt5s"]
+
+[node name="Game" type="Node"]
+
+[node name="Level1" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Level1"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.8, 12.64)
+color = Color(0.368627, 0.533333, 1, 1)
+
+[node name="cloud9" parent="Level1" instance=ExtResource("5_toisc")]
+modulate = Color(0.870588, 0.870588, 0.870588, 1)
+position = Vector2(19, 172)
+scale = Vector2(0.951464, 1.05598)
+
+[node name="cloud6" parent="Level1" instance=ExtResource("5_toisc")]
+modulate = Color(0.870588, 0.870588, 0.870588, 1)
+position = Vector2(187, 234)
+scale = Vector2(0.951464, 1.05598)
+
+[node name="cloud3" parent="Level1" instance=ExtResource("5_toisc")]
+modulate = Color(0.870588, 0.870588, 0.870588, 1)
+position = Vector2(861, 160)
+scale = Vector2(0.951464, 1.05598)
+
+[node name="cloud4" parent="Level1" instance=ExtResource("5_toisc")]
+modulate = Color(0.870588, 0.870588, 0.870588, 1)
+position = Vector2(508, 200)
+scale = Vector2(0.951464, 1.05598)
+
+[node name="cloud" parent="Level1" instance=ExtResource("5_toisc")]
+position = Vector2(1037, 104)
+scale = Vector2(1.52127, 1.35699)
+
+[node name="floor" parent="Level1" instance=ExtResource("1_fdeyk")]
+position = Vector2(-45, 484)
+scale = Vector2(3.4, 1)
+
+[node name="Camera2D" type="Camera2D" parent="Level1"]
+position = Vector2(577, 328)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="Level1"]
+energy = 0.14
+
+[node name="invis_wall" parent="Level1" instance=ExtResource("3_ylq68")]
+position = Vector2(-97, -4)
+
+[node name="slope" parent="Level1" instance=ExtResource("4_62r2u")]
+position = Vector2(413, 422)
+scale = Vector2(2, 1.96)
+
+[node name="floor2" parent="Level1" instance=ExtResource("1_fdeyk")]
+position = Vector2(482, 356)
+scale = Vector2(0.487996, 0.830827)
+
+[node name="floor3" parent="Level1" instance=ExtResource("1_fdeyk")]
+position = Vector2(653, 412)
+scale = Vector2(0.486038, 0.476603)
+
+[node name="cloud2" parent="Level1" instance=ExtResource("5_toisc")]
+position = Vector2(396, 192)
+scale = Vector2(1.52127, 1.35699)
+
+[node name="cloud5" parent="Level1" instance=ExtResource("5_toisc")]
+position = Vector2(27, 107)
+scale = Vector2(1.52127, 1.35699)
+
+[node name="cloud7" parent="Level1" instance=ExtResource("5_toisc")]
+position = Vector2(665, 73)
+scale = Vector2(1.52127, 1.35699)
+
+[node name="cloud8" parent="Level1" instance=ExtResource("5_toisc")]
+position = Vector2(269, 86)
+scale = Vector2(1.52127, 1.35699)
+
+[node name="ColorRect2" type="ColorRect" parent="Level1"]
+offset_left = 1153.0
+offset_top = -3.0
+offset_right = 1195.0
+offset_bottom = 37.0
+scale = Vector2(28.8, 12.64)
+color = Color(0.368627, 0.533333, 1, 1)
+
+[node name="character" parent="Level1" instance=ExtResource("2_ykthu")]
+position = Vector2(-3.99997, 365)
+
+[node name="warper" parent="Level1" instance=ExtResource("6_42vlc")]
+position = Vector2(1160, 252)
+tp_player = Vector2(150, 700)
+tp_camera = Vector2(1750, 0)
+
+[node name="SignRight" type="Sprite2D" parent="Level1"]
+position = Vector2(1085, 451)
+texture = ExtResource("6_vlt5s")
+
+[node name="floor4" parent="Level1" instance=ExtResource("1_fdeyk")]
+position = Vector2(1146, 484)
+scale = Vector2(3.4, 1)
