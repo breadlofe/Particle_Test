@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3excb7j38e0h"]
+
+[ext_resource type="Material" uid="uid://bmjuo36ns2h0w" path="res://particles/flame.tres" id="1_s36o3"]
+
+[node name="flame_particle" type="GPUParticles2D"]
+amount = 400
+process_material = ExtResource("1_s36o3")
+lifetime = 2.0
+randomness = 1.0
