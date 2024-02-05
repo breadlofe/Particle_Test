@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bls25ie3jfecj"]
+[gd_scene load_steps=9 format=3 uid="uid://bls25ie3jfecj"]
 
 [ext_resource type="PackedScene" uid="uid://bsv5y8xp5vwgf" path="res://scenes/floor.tscn" id="1_fdeyk"]
 [ext_resource type="PackedScene" uid="uid://bi86werbca44n" path="res://scenes/character.tscn" id="2_ykthu"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://v1v1w8cmthfg" path="res://scenes/cloud.tscn" id="5_toisc"]
 [ext_resource type="PackedScene" uid="uid://25850kpjo1jw" path="res://scenes/warper.tscn" id="6_42vlc"]
 [ext_resource type="Texture2D" uid="uid://cpr74v6xg80kf" path="res://textures/signRight.png" id="6_vlt5s"]
+[ext_resource type="PackedScene" uid="uid://waclubbqdyen" path="res://scenes/rain.tscn" id="8_phyny"]
 
 [node name="Game" type="Node"]
 
@@ -84,12 +85,12 @@ position = Vector2(269, 86)
 scale = Vector2(1.52127, 1.35699)
 
 [node name="ColorRect2" type="ColorRect" parent="Level1"]
-offset_left = 1153.0
+offset_left = 1152.0
 offset_top = -3.0
-offset_right = 1195.0
+offset_right = 1194.0
 offset_bottom = 37.0
 scale = Vector2(28.8, 12.64)
-color = Color(0.368627, 0.533333, 1, 1)
+color = Color(0.368627, 0.454902, 0.505882, 1)
 
 [node name="character" parent="Level1" instance=ExtResource("2_ykthu")]
 position = Vector2(-3.99997, 365)
@@ -102,6 +103,9 @@ tp_camera = Vector2(1750, 0)
 [node name="SignRight" type="Sprite2D" parent="Level1"]
 position = Vector2(1085, 451)
 texture = ExtResource("6_vlt5s")
+
+[node name="rain" parent="Level1" instance=ExtResource("8_phyny")]
+position = Vector2(1554, 5)
 
 [node name="floor4" parent="Level1" instance=ExtResource("1_fdeyk")]
 position = Vector2(1146, 484)

@@ -60,7 +60,7 @@ hframes = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Sprite2D")
-speed_scale = 3.69
 libraries = {
 "": SubResource("AnimationLibrary_c8jq8")
 }
+speed_scale = 3.69
