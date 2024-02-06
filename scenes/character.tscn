@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bi86werbca44n"]
+[gd_scene load_steps=8 format=3 uid="uid://bi86werbca44n"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_eil4r"]
 [ext_resource type="Texture2D" uid="uid://bycib78qyqly4" path="res://textures/fox.png" id="1_sp163"]
@@ -44,6 +44,9 @@ _data = {
 "walk": SubResource("Animation_k1oxh")
 }
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mp0u1"]
+polygon = PackedVector2Array(60, 49, 65, 54, 64, 89, 55, 94, 55, 100, 52, 102, 52, 111, 41, 114, 40, 120, 29, 121, 29, 109, 23, 103, 17, 103, 10, 87, 16, 72, 20, 68, 24, 73, 26, 65, 23, 63, 22, 49, 33, 49, 41, 54, 52, 54)
+
 [node name="character" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_eil4r")
 
@@ -64,3 +67,6 @@ libraries = {
 "": SubResource("AnimationLibrary_c8jq8")
 }
 speed_scale = 3.69
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_mp0u1")

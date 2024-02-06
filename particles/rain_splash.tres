@@ -1,7 +1,15 @@
-[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://boli00r5vuvaa"]
+[gd_resource type="ParticleProcessMaterial" load_steps=3 format=3 uid="uid://boli00r5vuvaa"]
+
+[sub_resource type="Curve" id="Curve_o4i6t"]
+max_value = 5.0
+_data = [Vector2(0, 1.22642), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_qq4ra"]
+curve = SubResource("Curve_o4i6t")
 
 [resource]
-lifetime_randomness = 0.31
+lifetime_randomness = 0.5
 particle_flag_disable_z = true
 emission_shape_offset = Vector3(0, -1, 0)
 angle_max = 64.7
@@ -11,3 +19,6 @@ initial_velocity_min = 60.0
 initial_velocity_max = 60.0
 radial_velocity_min = -5.0
 gravity = Vector3(0, 0, 0)
+scale_max = 3.0
+scale_curve = SubResource("CurveTexture_qq4ra")
+color = Color(0.533333, 0.839216, 0.980392, 1)
