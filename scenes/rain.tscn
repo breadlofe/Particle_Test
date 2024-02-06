@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://waclubbqdyen"]
 
 [ext_resource type="Material" uid="uid://c7reagry4kw6y" path="res://particles/rain.tres" id="1_ofpr4"]
-[ext_resource type="Material" uid="uid://boli00r5vuvaa" path="res://particles/rain_splash.tres" id="2_p0ujm"]
+[ext_resource type="Material" path="res://particles/rain_splash.tres" id="2_p0ujm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_b3yst"]
 
@@ -26,5 +26,5 @@ explosiveness = 1.0
 physics_material_override = SubResource("PhysicsMaterial_b3yst")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="StaticBody2D"]
-position = Vector2(21, 33)
+position = Vector2(19, 31)
 occluder = SubResource("OccluderPolygon2D_ia6a6")
