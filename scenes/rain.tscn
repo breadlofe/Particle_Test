@@ -1,9 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://waclubbqdyen"]
+[gd_scene load_steps=5 format=3 uid="uid://waclubbqdyen"]
 
 [ext_resource type="Material" uid="uid://c7reagry4kw6y" path="res://particles/rain.tres" id="1_ofpr4"]
 [ext_resource type="Material" uid="uid://boli00r5vuvaa" path="res://particles/rain_splash.tres" id="2_p0ujm"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_b3yst"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ia6a6"]
+polygon = PackedVector2Array(-388, 510, 360, 512, 361, 542, -389, 543)
+
+[node name="rain_node" type="Node2D"]
 
 [node name="rain" type="GPUParticles2D" parent="."]
 amount = 1000
@@ -16,3 +21,10 @@ process_material = ExtResource("1_ofpr4")
 amount = 200
 process_material = ExtResource("2_p0ujm")
 explosiveness = 1.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_b3yst")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="StaticBody2D"]
+position = Vector2(21, 33)
+occluder = SubResource("OccluderPolygon2D_ia6a6")
