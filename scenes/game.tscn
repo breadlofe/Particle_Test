@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bls25ie3jfecj"]
+[gd_scene load_steps=12 format=3 uid="uid://bls25ie3jfecj"]
 
 [ext_resource type="PackedScene" uid="uid://bsv5y8xp5vwgf" path="res://scenes/floor.tscn" id="1_fdeyk"]
 [ext_resource type="PackedScene" uid="uid://bi86werbca44n" path="res://scenes/character.tscn" id="2_ykthu"]
@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://25850kpjo1jw" path="res://scenes/warper.tscn" id="6_42vlc"]
 [ext_resource type="Texture2D" uid="uid://cpr74v6xg80kf" path="res://textures/signRight.png" id="6_vlt5s"]
 [ext_resource type="PackedScene" uid="uid://waclubbqdyen" path="res://scenes/rain.tscn" id="8_phyny"]
+[ext_resource type="PackedScene" uid="uid://dm3eh420pgbaa" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
+[ext_resource type="PackedScene" uid="uid://cokk64oshrxdr" path="res://scenes/torch.tscn" id="10_pjs5t"]
+[ext_resource type="PackedScene" uid="uid://baaj0mo7dn5wi" path="res://scenes/spotlight.tscn" id="11_l7mib"]
 
 [node name="Game" type="Node"]
 
@@ -92,9 +95,6 @@ offset_bottom = 37.0
 scale = Vector2(28.8, 12.64)
 color = Color(0.368627, 0.454902, 0.505882, 1)
 
-[node name="character" parent="Level1" instance=ExtResource("2_ykthu")]
-position = Vector2(-3.99997, 365)
-
 [node name="warper" parent="Level1" instance=ExtResource("6_42vlc")]
 position = Vector2(1160, 252)
 tp_player = Vector2(150, 700)
@@ -109,4 +109,41 @@ position = Vector2(1554, 5)
 
 [node name="floor4" parent="Level1" instance=ExtResource("1_fdeyk")]
 position = Vector2(1146, 484)
-scale = Vector2(3.4, 1)
+scale = Vector2(3.48, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Level1"]
+offset_left = 2335.0
+offset_top = -3.0
+offset_right = 2377.0
+offset_bottom = 37.0
+scale = Vector2(35, 12.64)
+color = Color(0.0705882, 0.0980392, 0.113725, 1)
+
+[node name="cave_floor" parent="Level1" instance=ExtResource("9_ugxq8")]
+position = Vector2(3017, 567)
+scale = Vector2(19.52, 2.305)
+
+[node name="floor5" parent="Level1" instance=ExtResource("1_fdeyk")]
+position = Vector2(1612, 437)
+scale = Vector2(0.487996, 0.310826)
+
+[node name="cave_floor2" parent="Level1" instance=ExtResource("9_ugxq8")]
+position = Vector2(2893, 80)
+scale = Vector2(26.12, 2.305)
+
+[node name="character" parent="Level1" instance=ExtResource("2_ykthu")]
+position = Vector2(-3.99997, 365)
+
+[node name="warper2" parent="Level1" instance=ExtResource("6_42vlc")]
+position = Vector2(2351, 249)
+tp_player = Vector2(150, 700)
+tp_camera = Vector2(3000, 0)
+
+[node name="torch" parent="Level1" instance=ExtResource("10_pjs5t")]
+position = Vector2(2609, 523)
+
+[node name="spotlight" parent="Level1" instance=ExtResource("11_l7mib")]
+position = Vector2(2958, 160)
+
+[node name="torch2" parent="Level1" instance=ExtResource("10_pjs5t")]
+position = Vector2(3335, 519)

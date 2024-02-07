@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://cokk64oshrxdr"]
+
+[ext_resource type="Texture2D" uid="uid://lklp66lsonv" path="res://textures/torch.png" id="1_u4bah"]
+[ext_resource type="PackedScene" uid="uid://d3excb7j38e0h" path="res://scenes/flame_particle.tscn" id="2_agtwc"]
+[ext_resource type="Script" path="res://scripts/torch.gd" id="2_uf2qc"]
+[ext_resource type="Texture2D" uid="uid://b6wd33svqfvh7" path="res://textures/spotlight.png" id="3_km5dp"]
+
+[node name="torch" type="Sprite2D"]
+light_mask = 2
+texture = ExtResource("1_u4bah")
+script = ExtResource("2_uf2qc")
+
+[node name="flame_particle" parent="." instance=ExtResource("2_agtwc")]
+position = Vector2(0, -5)
+
+[node name="torch_light" type="PointLight2D" parent="."]
+position = Vector2(1, -2)
+rotation = 3.14125
+color = Color(0.976471, 0.360784, 0, 1)
+energy = 5.48
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.223529)
+texture = ExtResource("3_km5dp")
+texture_scale = 4.83

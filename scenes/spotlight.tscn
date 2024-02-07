@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://baaj0mo7dn5wi"]
+
+[ext_resource type="Texture2D" uid="uid://lklp66lsonv" path="res://textures/torch.png" id="1_th16v"]
+[ext_resource type="Texture2D" uid="uid://digmmb8w8jhsx" path="res://textures/cone_light.png" id="2_a6qxi"]
+
+[node name="spotlight" type="Sprite2D"]
+rotation = 3.14159
+texture = ExtResource("1_th16v")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-1.49493e-05, -171)
+rotation = 3.14159
+scale = Vector2(7, 7)
+color = Color(1, 1, 0.623529, 1)
+energy = 3.13
+shadow_enabled = true
+texture = ExtResource("2_a6qxi")
+texture_scale = 1.4
