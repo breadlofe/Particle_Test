@@ -8,9 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://25850kpjo1jw" path="res://scenes/warper.tscn" id="6_42vlc"]
 [ext_resource type="Texture2D" uid="uid://cpr74v6xg80kf" path="res://textures/signRight.png" id="6_vlt5s"]
 [ext_resource type="PackedScene" uid="uid://waclubbqdyen" path="res://scenes/rain.tscn" id="8_phyny"]
-[ext_resource type="PackedScene" uid="uid://dm3eh420pgbaa" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
-[ext_resource type="PackedScene" uid="uid://cokk64oshrxdr" path="res://scenes/torch.tscn" id="10_pjs5t"]
-[ext_resource type="PackedScene" uid="uid://baaj0mo7dn5wi" path="res://scenes/spotlight.tscn" id="11_l7mib"]
+[ext_resource type="PackedScene" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
+[ext_resource type="PackedScene" path="res://scenes/torch.tscn" id="10_pjs5t"]
+[ext_resource type="PackedScene" path="res://scenes/spotlight.tscn" id="11_l7mib"]
 
 [node name="Game" type="Node"]
 

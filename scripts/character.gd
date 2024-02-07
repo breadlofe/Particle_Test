@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 @export  var SPEED = 300.0
 @export  var JUMP_VELOCITY = -400.0
-
+@export  var BULLET: PackedScene
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -19,6 +19,11 @@ func _process(_delta):
 		_sprite_2D.flip_h = true
 	else:
 		_animation_player.stop()
+	if Input.is_action_pressed("shoot"):
+		$shot_charge.show()
+	if Input.is_action_just_released("shoot"):
+		spawn_bullet(self.position, self.rotation, $bullet_holder.global_position)
+		$shot_charge.hide()
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -39,3 +44,11 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+func spawn_bullet(pos, rot, test):
+	print("WAH", pos)
+	print("TEST", test)
+	var bullet = BULLET.instantiate()
+	bullet.position = test
+	bullet.rotation = self.rotation
+	get_tree().get_root().add_child(bullet)

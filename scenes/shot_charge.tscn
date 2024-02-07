@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b77jmd0l3jpsb"]
+
+[ext_resource type="Material" uid="uid://g74b82vmysis" path="res://particles/shot_charge.tres" id="1_ccvus"]
+[ext_resource type="Texture2D" uid="uid://b2m5gvhr1wi54" path="res://textures/charge_sprite.png" id="2_52ls8"]
+
+[node name="shot_charge" type="GPUParticles2D"]
+amount = 100
+process_material = ExtResource("1_ccvus")
+texture = ExtResource("2_52ls8")
+speed_scale = 2.0
