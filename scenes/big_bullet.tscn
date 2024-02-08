@@ -60,3 +60,5 @@ frame = 1
 libraries = {
 "": SubResource("AnimationLibrary_le6n8")
 }
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

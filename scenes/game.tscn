@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bls25ie3jfecj"]
+[gd_scene load_steps=13 format=3 uid="uid://bls25ie3jfecj"]
 
 [ext_resource type="PackedScene" uid="uid://bsv5y8xp5vwgf" path="res://scenes/floor.tscn" id="1_fdeyk"]
 [ext_resource type="PackedScene" uid="uid://bi86werbca44n" path="res://scenes/character.tscn" id="2_ykthu"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://waclubbqdyen" path="res://scenes/rain.tscn" id="8_phyny"]
 [ext_resource type="PackedScene" uid="uid://dm3eh420pgbaa" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
 [ext_resource type="PackedScene" uid="uid://cokk64oshrxdr" path="res://scenes/torch.tscn" id="10_pjs5t"]
+[ext_resource type="PackedScene" uid="uid://dh71gafyufi40" path="res://scenes/enemy.tscn" id="10_v66vg"]
 [ext_resource type="PackedScene" uid="uid://baaj0mo7dn5wi" path="res://scenes/spotlight.tscn" id="11_l7mib"]
 
 [node name="Game" type="Node"]
@@ -144,6 +145,10 @@ position = Vector2(2609, 523)
 
 [node name="spotlight" parent="Level1" instance=ExtResource("11_l7mib")]
 position = Vector2(2958, 160)
+
+[node name="enemy" parent="Level1" instance=ExtResource("10_v66vg")]
+position = Vector2(3218, 437)
+scale = Vector2(3, 3)
 
 [node name="torch2" parent="Level1" instance=ExtResource("10_pjs5t")]
 position = Vector2(3335, 519)

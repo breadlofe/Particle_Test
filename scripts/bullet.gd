@@ -14,3 +14,9 @@ func _process(delta):
 
 func _set_dir(facing):
 	dir = facing
+
+
+func _on_body_entered(body):
+	if body.is_in_group("enemy"):
+		body.got_hit(0)
+		self.queue_free()

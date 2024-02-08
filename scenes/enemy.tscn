@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dh71gafyufi40"]
+
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_ga2cw"]
+[ext_resource type="Texture2D" uid="uid://bycib78qyqly4" path="res://textures/fox.png" id="1_ktufl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4lc8x"]
+size = Vector2(15, 21)
+
+[node name="enemy" type="CharacterBody2D" groups=["enemy"]]
+script = ExtResource("1_ga2cw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.396078, 0.870588, 1)
+texture = ExtResource("1_ktufl")
+flip_h = true
+hframes = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 4.5)
+shape = SubResource("RectangleShape2D_4lc8x")

@@ -1,0 +1,23 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=3 format=3 uid="uid://ytkgk5i24xsr"]
+
+[sub_resource type="Curve" id="Curve_tskj4"]
+_data = [Vector2(0.02, 1), 0.0, 0.0, 0, 0, Vector2(0.826667, 0.769231), 0.0, 0.0, 0, 0, Vector2(1, 0.120879), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_vrh3l"]
+curve = SubResource("Curve_tskj4")
+
+[resource]
+particle_flag_disable_z = true
+inherit_velocity_ratio = 100.0
+spread = 180.0
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 0, 0)
+tangential_accel_max = 38.2
+scale_max = 3.0
+color = Color(0.780392, 0.803922, 1, 1)
+alpha_curve = SubResource("CurveTexture_vrh3l")
+hue_variation_max = 0.07
+anim_speed_min = 3.08
+anim_speed_max = 3.8
