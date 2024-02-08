@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://bls25ie3jfecj"]
+[gd_scene load_steps=14 format=3 uid="uid://bls25ie3jfecj"]
 
+[ext_resource type="Script" path="res://scripts/Level1.gd" id="1_2jwt2"]
 [ext_resource type="PackedScene" uid="uid://bsv5y8xp5vwgf" path="res://scenes/floor.tscn" id="1_fdeyk"]
 [ext_resource type="PackedScene" uid="uid://bi86werbca44n" path="res://scenes/character.tscn" id="2_ykthu"]
 [ext_resource type="PackedScene" uid="uid://dpcw5tmshgw6u" path="res://scenes/invis_wall.tscn" id="3_ylq68"]
@@ -16,6 +17,7 @@
 [node name="Game" type="Node"]
 
 [node name="Level1" type="Node2D" parent="."]
+script = ExtResource("1_2jwt2")
 
 [node name="ColorRect" type="ColorRect" parent="Level1"]
 offset_right = 40.0
