@@ -1,6 +1,6 @@
 extends Node
 
-@onready var big_shot_explosion = load("res://scenes/bullet_explosion.tscn")
+@onready var big_shot_explosion = preload("res://scenes/bullet_explosion.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
