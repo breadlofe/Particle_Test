@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bls25ie3jfecj"]
+[gd_scene load_steps=15 format=3 uid="uid://bls25ie3jfecj"]
 
 [ext_resource type="Script" path="res://scripts/Level1.gd" id="1_2jwt2"]
 [ext_resource type="PackedScene" uid="uid://bsv5y8xp5vwgf" path="res://scenes/floor.tscn" id="1_fdeyk"]
@@ -9,10 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://25850kpjo1jw" path="res://scenes/warper.tscn" id="6_42vlc"]
 [ext_resource type="Texture2D" uid="uid://cpr74v6xg80kf" path="res://textures/signRight.png" id="6_vlt5s"]
 [ext_resource type="PackedScene" uid="uid://waclubbqdyen" path="res://scenes/rain.tscn" id="8_phyny"]
-[ext_resource type="PackedScene" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
-[ext_resource type="PackedScene" path="res://scenes/torch.tscn" id="10_pjs5t"]
+[ext_resource type="PackedScene" uid="uid://dm3eh420pgbaa" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
+[ext_resource type="PackedScene" uid="uid://cokk64oshrxdr" path="res://scenes/torch.tscn" id="10_pjs5t"]
 [ext_resource type="PackedScene" uid="uid://dh71gafyufi40" path="res://scenes/enemy.tscn" id="10_v66vg"]
-[ext_resource type="PackedScene" path="res://scenes/spotlight.tscn" id="11_l7mib"]
+[ext_resource type="PackedScene" uid="uid://baaj0mo7dn5wi" path="res://scenes/spotlight.tscn" id="11_l7mib"]
+[ext_resource type="PackedScene" uid="uid://bb27ipu1pvlk0" path="res://scenes/mask_test.tscn" id="14_0odha"]
 
 [node name="Game" type="Node"]
 
@@ -86,6 +87,11 @@ scale = Vector2(1.52127, 1.35699)
 position = Vector2(665, 73)
 scale = Vector2(1.52127, 1.35699)
 
+[node name="mask_test" parent="Level1/cloud7" instance=ExtResource("14_0odha")]
+position = Vector2(-29.5805, 75.9033)
+scale = Vector2(5.25876, 5.8954)
+amount = 3091
+
 [node name="cloud8" parent="Level1" instance=ExtResource("5_toisc")]
 position = Vector2(269, 86)
 scale = Vector2(1.52127, 1.35699)
@@ -149,7 +155,7 @@ position = Vector2(2609, 523)
 position = Vector2(2958, 160)
 
 [node name="enemy" parent="Level1" instance=ExtResource("10_v66vg")]
-position = Vector2(573, 310)
+position = Vector2(3218, 438)
 scale = Vector2(3, 3)
 
 [node name="torch2" parent="Level1" instance=ExtResource("10_pjs5t")]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1urfyud8feh"]
+[gd_scene load_steps=5 format=3 uid="uid://c1urfyud8feh"]
 
 [ext_resource type="Material" uid="uid://ytkgk5i24xsr" path="res://particles/bullet_explosion.tres" id="1_e6ipx"]
 [ext_resource type="Texture2D" uid="uid://tghv1ny4j724" path="res://textures/Explosion_Sheet.png" id="2_36duv"]
+[ext_resource type="Script" path="res://scripts/bullet_explosion.gd" id="3_8m26r"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fa7bx"]
 particles_animation = true
@@ -18,3 +19,4 @@ texture = ExtResource("2_36duv")
 one_shot = true
 explosiveness = 1.0
 randomness = 0.5
+script = ExtResource("3_8m26r")

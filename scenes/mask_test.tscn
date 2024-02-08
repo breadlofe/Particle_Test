@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb27ipu1pvlk0"]
+
+[ext_resource type="Material" uid="uid://b3trevhm0dxe" path="res://particles/mask_test.tres" id="1_g4you"]
+
+[node name="mask_test" type="GPUParticles2D"]
+amount = 75
+process_material = ExtResource("1_g4you")
+visibility_rect = Rect2(-1, -1, 2, 2)

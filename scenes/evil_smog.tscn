@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dremw7kwva6iq"]
+
+[ext_resource type="Material" uid="uid://dqlbsggung8e1" path="res://particles/evil_smog.tres" id="1_4g2fw"]
+
+[node name="evil_smog" type="GPUParticles2D"]
+process_material = ExtResource("1_4g2fw")
+trail_enabled = true
+trail_lifetime = 0.5
+trail_sections = 10
+trail_section_subdivisions = 5
