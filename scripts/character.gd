@@ -11,6 +11,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var _animation_player = $AnimationPlayer
 @onready var _sprite_2D = $Sprite2D
+@onready var camera = get_node("../Camera2D")
 var dir: int = 1
 
 func _process(_delta):
@@ -34,7 +35,16 @@ func _process(_delta):
 		else:
 			spawn_bullet($bullet_holder.global_position, self.rotation, 1)
 		SHOT_TIMER = 1.0
+		print(self.global_position)
 		$shot_charge.hide()
+		
+	# CAMERA
+	if self.global_position.x < 1125:
+		camera.global_position.x = 575
+	elif self.global_position.x < 2275 && self.global_position.x >= 1125:
+		camera.global_position.x = 1730
+	elif self.global_position.x >= 2275:
+		camera.global_position.x = 2975
 
 func _physics_process(delta):
 	# Add the gravity.

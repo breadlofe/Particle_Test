@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dh71gafyufi40"]
+[gd_scene load_steps=6 format=3 uid="uid://dh71gafyufi40"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_ga2cw"]
 [ext_resource type="Texture2D" uid="uid://bycib78qyqly4" path="res://textures/fox.png" id="1_ktufl"]
 [ext_resource type="PackedScene" uid="uid://dremw7kwva6iq" path="res://scenes/evil_smog.tscn" id="3_igedq"]
+[ext_resource type="PackedScene" uid="uid://d0oexgb37aleb" path="res://scenes/laugh.tscn" id="4_yxnui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4lc8x"]
 size = Vector2(15, 21)
@@ -22,3 +23,6 @@ shape = SubResource("RectangleShape2D_4lc8x")
 
 [node name="evil_smog" parent="." instance=ExtResource("3_igedq")]
 position = Vector2(0, 4)
+
+[node name="laugh" parent="." instance=ExtResource("4_yxnui")]
+visible = false

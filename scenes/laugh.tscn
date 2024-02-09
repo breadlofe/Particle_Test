@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0oexgb37aleb"]
+
+[ext_resource type="Texture2D" uid="uid://rkxaodpcafn3" path="res://textures/haha.png" id="1_3t6vu"]
+
+[sub_resource type="Gradient" id="Gradient_ba4dp"]
+colors = PackedColorArray(0.942823, 0.942823, 0.942823, 1, 1, 1, 1, 0)
+
+[node name="laugh" type="CPUParticles2D"]
+scale = Vector2(2, 2)
+explosiveness = 0.3
+randomness = 0.48
+lifetime_randomness = 0.3
+texture = ExtResource("1_3t6vu")
+direction = Vector2(0, -1)
+spread = 101.65
+gravity = Vector2(0, -200)
+initial_velocity_max = 35.0
+radial_accel_max = 3.0
+scale_amount_min = 2.0
+scale_amount_max = 2.0
+color_ramp = SubResource("Gradient_ba4dp")
