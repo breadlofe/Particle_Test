@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cokk64oshrxdr"]
+[gd_scene load_steps=5 format=3 uid="uid://c50vshrdpqu00"]
 
 [ext_resource type="Texture2D" uid="uid://lklp66lsonv" path="res://textures/torch.png" id="1_u4bah"]
 [ext_resource type="PackedScene" uid="uid://d3excb7j38e0h" path="res://scenes/flame_particle.tscn" id="2_agtwc"]

@@ -5,4 +5,4 @@
 [node name="mask_test" type="GPUParticles2D"]
 amount = 75
 process_material = ExtResource("1_g4you")
-visibility_rect = Rect2(-1, -1, 2, 2)
+visibility_rect = Rect2(-4.99997, -4.06447, 9.51078, 8.93211)

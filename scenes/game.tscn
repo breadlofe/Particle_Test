@@ -8,10 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://v1v1w8cmthfg" path="res://scenes/cloud.tscn" id="5_toisc"]
 [ext_resource type="Texture2D" uid="uid://cpr74v6xg80kf" path="res://textures/signRight.png" id="6_vlt5s"]
 [ext_resource type="PackedScene" uid="uid://waclubbqdyen" path="res://scenes/rain.tscn" id="8_phyny"]
-[ext_resource type="PackedScene" uid="uid://dm3eh420pgbaa" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
-[ext_resource type="PackedScene" uid="uid://cokk64oshrxdr" path="res://scenes/torch.tscn" id="10_pjs5t"]
+[ext_resource type="PackedScene" path="res://scenes/cave_floor.tscn" id="9_ugxq8"]
+[ext_resource type="PackedScene" uid="uid://c50vshrdpqu00" path="res://scenes/torch.tscn" id="10_pjs5t"]
 [ext_resource type="PackedScene" uid="uid://dh71gafyufi40" path="res://scenes/enemy.tscn" id="10_v66vg"]
-[ext_resource type="PackedScene" uid="uid://baaj0mo7dn5wi" path="res://scenes/spotlight.tscn" id="11_l7mib"]
+[ext_resource type="PackedScene" path="res://scenes/spotlight.tscn" id="11_l7mib"]
 [ext_resource type="PackedScene" uid="uid://bb27ipu1pvlk0" path="res://scenes/mask_test.tscn" id="14_0odha"]
 
 [node name="Game" type="Node"]
